@@ -1,12 +1,17 @@
 body {
-  background-color: DarkSlateGrey;
+  background-color: Lavender;
 }
 
 .new_song_body {
-  display: flex;
   background-image: url("cassette.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.new_song_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .songs {
