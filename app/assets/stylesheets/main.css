@@ -5,13 +5,19 @@ body {
 .new_song_body {
   background-image: url("cassette.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 .new_song_form {
   display: flex;
-  align-items: center;
   justify-content: center;
+  font-family: 'Play', sans-serif;
+}
+
+.title {
 }
 
 .songs {
