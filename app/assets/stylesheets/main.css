@@ -1,0 +1,31 @@
+body {
+  background-color: DarkSlateGrey;
+}
+
+.new_song_body {
+  display: flex;
+  background-image: url("cassette.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.songs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100;
+  grid-gap: 3pxs;
+  justify-items: center;
+}
+
+.song {
+  background-color: LightSlateGray;
+  height: 250px;
+  width:  200px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.song img {
+  border-radius: 50%;
+}

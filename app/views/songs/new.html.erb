@@ -1,0 +1,21 @@
+<html>
+  <body class="new_song_body">
+    <%= form_for(@song) do |f| %>
+    <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+    </p>
+    <p>
+    <%= f.label :length %><br />
+    <%= f.text_area :length %>
+    </p>
+    <p>
+    <%= f.label :play_count %><br />
+    <%= f.text_area :play_count %>
+    </p>
+    <p>
+    <%= f.submit %>
+    </p>
+    <% end %>
+  </body>
+</html>

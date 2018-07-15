@@ -1,6 +1,13 @@
-<h1> All Songs </h1>
-
-<% @songs.each do |song| %>
-<h2><%= song.title %></h2>
-<p>Plays: <%= song.play_count %></p>
-<%end%>
+<html>
+  <h1> All Songs </h1>
+    <div class="songs">
+      <% @songs.each do |song| %>
+        <div class='song'
+        <p><%= image_tag('vinyl-record-player.jpg', size: '100x100', alt: 'record_player') %><p/>
+        <p><%= song.title %></p>
+        <p>Length: <%= song.length %></p>
+        <p>Plays: <%= song.play_count %></p>
+        </div>
+      <%end%>
+  </div>
+<html>
