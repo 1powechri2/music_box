@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
 
+
   resources :artists, shallow: true do
     resources :songs, except: [:index]
   end
@@ -12,4 +13,8 @@ Rails.application.routes.draw do
 end
 
   resources :users, only: [:new, :create, :show]
+
+  namespace :admin do
+    resources :categories, only: [:index]
+  end
 end
